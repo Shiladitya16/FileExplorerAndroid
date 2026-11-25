@@ -18,6 +18,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.shiladitya16.fileexplorer.ui.theme.FileExplorerTheme
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import com.shiladitya16.fileexplorer.ui.explorer.ExplorerScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,12 +28,13 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             FileExplorerTheme {
-                    Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                        Greeting(
-                            name = "Shilu",
-                            modifier = Modifier.padding(innerPadding)
-                        )
-                    }
+//                    Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+//                        Greeting(
+//                            name = "Shilu",
+//                            modifier = Modifier.padding(innerPadding)
+//                        )
+//                    }
+                ExplorerScreen()
             }
         }
     }
